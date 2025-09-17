@@ -31,7 +31,11 @@ public class CompteEpargne extends Compte {
 	@Override
 	 public double calculerInteret(){return getSolde() * tauxInteret;}
 	
-	
+	//getter && setters
+	public double getTauxInteret() {return tauxInteret;}
+	public void setTauxInteret(double tauxInteret) {
+		this.tauxInteret=tauxInteret;
+	}
 	
 	
 
