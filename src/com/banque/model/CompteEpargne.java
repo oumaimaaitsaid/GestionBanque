@@ -19,6 +19,13 @@ public class CompteEpargne extends Compte {
 		+",tauxInteret=" + tauxInteret + "]");
 	}
 	 
+	//methode_retirer
+	@Override
+	public void retirer(double montant) {
+		if(montant <= 0) throw new IllegalArgumentException("le montant doit etre > 0");
+			setSolde(getSolde()-montant);
+			ajouterOperation(new Retrait(UUID.randomUUID(), LocalDateTime.now(), montant,"Virment sortant"));
+	}
 	
 	
 	
