@@ -11,7 +11,14 @@ public class CompteEpargne extends Compte {
 		super(code,solde);
 		this.tauxInteret=tauxInteret;
 	}
-
+	//method_afficherDetails
+	@Override
+	public void afficherDetails() {
+		System.out.print("CompteEpargne code=[" + getCode()
+		+", solde=" + getSolde()
+		+",tauxInteret=" + tauxInteret + "]");
+	}
+	 
 	
 	
 	
