@@ -12,7 +12,13 @@ public class CompteCourant extends Compte{
 		this.decouvert=decouvert;
 	}
 	
-	
+	//methode_afficherDétails
+	@Override
+	public void afficherDetails() {
+        System.out.println("CompteCourant [code=" + getCode()
+                + ", solde=" + getSolde()
+                + ", decouvert=" + decouvert + "]");
+    }
 	
 
 	
