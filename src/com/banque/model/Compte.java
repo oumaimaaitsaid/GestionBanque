@@ -24,4 +24,17 @@ public abstract class Compte {
     	return String.format("CPT-%05d",fiveDigits);
     }
     //methods abstract
+    public abstract void retirer(double montant);
+    public abstract void afficherDetails();
+    public abstract double calculerInteret();
+
+  
+
+    
+
+   
+  
+   
+
+
 }
