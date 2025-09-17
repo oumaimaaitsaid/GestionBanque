@@ -28,7 +28,12 @@ public abstract class Compte {
     public abstract void afficherDetails();
     public abstract double calculerInteret();
 
-  
+    //method verser
+    public void verser(double montant, String source) {
+        if (montant <= 0) throw new IllegalArgumentException("Montant doit être > 0");
+        solde += montant;
+       listOperations.add(new Versement(UUID.randomUUID(),LocalDateTime.now(),montant,source));
+    }
 
     
 
