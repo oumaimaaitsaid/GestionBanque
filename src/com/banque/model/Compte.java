@@ -45,7 +45,10 @@ public abstract class Compte {
         return solde;
     }
   
-   
+    //method consulterListeOperation
+   public List<Operation> consulterListeOperations(){
+	   return listOperations;
+   }
 
 
 }
