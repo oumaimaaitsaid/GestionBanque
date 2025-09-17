@@ -50,5 +50,9 @@ public abstract class Compte {
 	   return listOperations;
    }
 
-
+    // Getters & Setters
+    public String getCode() { return code; }
+    public void setCode(String code) { this.code = code; }
+    public double getSolde() { return solde; }
+    public void setSolde(double solde) { this.solde = solde; }
 }
