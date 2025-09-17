@@ -27,7 +27,9 @@ public class CompteEpargne extends Compte {
 			ajouterOperation(new Retrait(UUID.randomUUID(), LocalDateTime.now(), montant,"Virment sortant"));
 	}
 	
-	
+	//CalculerInteret
+	@Override
+	 public double calculerInteret(){return getSolde() * tauxInteret;}
 	
 	
 	
