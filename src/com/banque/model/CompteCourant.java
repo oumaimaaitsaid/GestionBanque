@@ -20,7 +20,17 @@ public class CompteCourant extends Compte{
                 + ", decouvert=" + decouvert + "]");
     }
 	
-
+	//methodeRetirer
+	@Override
+	public void retirer(double montant) {
+		if (montant <=0) throw new IllegalArgumentException("Montant doit étre >0");
+		double nouveauSolde =getSolde() - montant;
+		if (nouveauSolde < -decouvert)
+			throw new IllegalArgumentException("tu dépasse le découvert autorisé ");
+		
+		ajouterOperation(new Retrait(UUID.randomUUID(), LocalDateTime.now(), montant,"Distributeur"));
+	}
+	
 	
 	
 	
