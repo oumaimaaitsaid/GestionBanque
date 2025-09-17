@@ -40,7 +40,10 @@ public abstract class Compte {
     	  listOperations.add(op);
       }
 
-   
+     //method consulerSolde
+    public double consulterSolde() {
+        return solde;
+    }
   
    
 
