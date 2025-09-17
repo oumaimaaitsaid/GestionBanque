@@ -35,7 +35,10 @@ public abstract class Compte {
        listOperations.add(new Versement(UUID.randomUUID(),LocalDateTime.now(),montant,source));
     }
 
-    
+    //method ajouterOperation
+      public void ajouterOperation(Operation op) {
+    	  listOperations.add(op);
+      }
 
    
   
