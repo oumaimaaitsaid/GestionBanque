@@ -35,7 +35,9 @@ public class CompteCourant extends Compte{
 	@Override
 	 public double calculerInteret(){return 0.0;}
 	
-	
+	//getter && setters
+	public double getDecouvert() {return decouvert;}
+	public void setDecouvert(double decouvert) {this.decouvert=decouvert;}
 	
 
 }
