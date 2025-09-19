@@ -33,7 +33,10 @@ public class CompteService {
         c.verser(montant, source);
     }
 
-   
+    public void retirer(String code, double montant) throws CompteException {
+        Compte c = getCompte(code);
+        c.retirer(montant);
+    }
 
    
 
