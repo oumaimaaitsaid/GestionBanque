@@ -7,8 +7,8 @@ public class CompteEpargne extends Compte {
 	
 	private double tauxInteret;
 	
-	CompteEpargne (String code,double solde,double tauxInteret){
-		super(code,solde);
+	public CompteEpargne (double solde,double tauxInteret){
+		super(null,solde);
 		this.tauxInteret=tauxInteret;
 	}
 	//method_afficherDetails

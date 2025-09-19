@@ -7,8 +7,8 @@ public class CompteCourant extends Compte{
 	
 	private double decouvert;
 	
-	CompteCourant (String code,double solde,double decouvert){
-		super(code,solde);
+	public CompteCourant (double solde,double decouvert){
+		super(null,solde);
 		this.decouvert=decouvert;
 	}
 	
@@ -27,6 +27,7 @@ public class CompteCourant extends Compte{
 		double nouveauSolde =getSolde() - montant;
 		if (nouveauSolde < -decouvert)
 			throw new IllegalArgumentException("tu dépasse le découvert autorisé ");
+		setSolde(nouveauSolde); 
 		
 		ajouterOperation(new Retrait(UUID.randomUUID(), LocalDateTime.now(), montant,"Distributeur"));
 	}
