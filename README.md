@@ -35,28 +35,24 @@ java -jar Banque.jar
 
 src/
 ├── com.banque.exception
-│ └── CompteException.java
-│
+│   └── CompteException.java
 ├── com.banque.model
-│ ├── Compte.java
-│ ├── CompteCourant.java
-│ ├── CompteEpargne.java
-│ ├── Operation.java
-│ ├── Retrait.java
-│ └── Versement.java
-│
+│   ├── Compte.java
+│   ├── CompteCourant.java
+│   ├── CompteEpargne.java
+│   ├── Operation.java
+│   ├── Retrait.java
+│   └── Versement.java
 ├── com.banque.repository
-│ └── CompteRepository.java
-│
+│   └── CompteRepository.java
 ├── com.banque.service
-│ └── CompteService.java
-│
+│   └── CompteService.java
 ├── com.banque.UI
-│ └── ConsoleMain.java
-│
+│   └── ConsoleMain.java
 └── test
-├── CompteServiceTest.java
-└── TestBase.java
+    ├── CompteServiceTest.java
+    └── TestBase.java
+
 
 
 
