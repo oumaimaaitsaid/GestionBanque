@@ -22,7 +22,12 @@ public class CompteService {
         return c.getCode();
     }
 
-  
+    public String createCompteEpargne(double solde, double taux) {
+        CompteEpargne c = new CompteEpargne( solde, taux);
+        repo.save(c);
+        return c.getCode();
+    }
+   
    
 
    
