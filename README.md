@@ -33,31 +33,12 @@ java -jar Banque.jar
 ----
 ## 📁 Structure du projet
 
-src/
-├── com.banque.exception
-│   └── CompteException.java
-├── com.banque.model
-│   ├── Compte.java
-│   ├── CompteCourant.java
-│   ├── CompteEpargne.java
-│   ├── Operation.java
-│   ├── Retrait.java
-│   └── Versement.java
-├── com.banque.repository
-│   └── CompteRepository.java
-├── com.banque.service
-│   └── CompteService.java
-├── com.banque.UI
-│   └── ConsoleMain.java
-└── test
-    ├── CompteServiceTest.java
-    └── TestBase.java
-
-
+<img width="318" height="741" alt="image" src="https://github.com/user-attachments/assets/dd9a3680-8d83-4c3b-8d97-e949638151f7" />
 
 
 ## Diagramme De Classe 
-![Diagramme de Classe](images/diagrammeDeClasse.png)
+<img width="1542" height="743" alt="image" src="https://github.com/user-attachments/assets/3cde0236-06c8-4ec8-aae6-a499d8a39808" />
+
 
 
 👩‍💻 Auteur
