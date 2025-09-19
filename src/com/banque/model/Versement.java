@@ -16,7 +16,7 @@ public class Versement extends Operation {
 	        System.out.println("Versement [" + getMontant() + " de " + source + " le " + getDate() + "]");
 	    }
 	
-	//getters & setters
+	//getters & setters and
 	
 	public String getSource() {return source;}
 	public void setSource(String source) {this.source=source;}
