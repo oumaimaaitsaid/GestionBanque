@@ -53,5 +53,8 @@ public class CompteService {
         return getCompte(code).consulterListeOperations();
     }
    
-  
+    private Compte getCompte(String code) throws CompteException {
+        return repo.findByCode(code)
+                   .orElseThrow(() -> new CompteException("Compte " + code + " introuvable"));
+    }
 }
