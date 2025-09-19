@@ -45,7 +45,10 @@ public class CompteService {
         dest.verser(montant, "Virement interne depuis " + from);
     }
 
-  
+    public double consulterSolde(String code) throws CompteException {
+        return getCompte(code).consulterSolde();
+    }
+
   
   
 }
