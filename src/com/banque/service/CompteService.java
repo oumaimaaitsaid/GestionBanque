@@ -38,7 +38,12 @@ public class CompteService {
         c.retirer(montant);
     }
 
-   
+    public void virement(String from, String to, double montant) throws CompteException {
+        Compte src = getCompte(from);
+        Compte dest = getCompte(to);
+        src.retirer(montant);
+        dest.verser(montant, "Virement interne depuis " + from);
+    }
 
   
   
