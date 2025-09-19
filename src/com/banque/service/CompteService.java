@@ -28,7 +28,10 @@ public class CompteService {
         return c.getCode();
     }
    
-   
+    public void verser(String code, double montant, String source) throws CompteException {
+        Compte c = getCompte(code);
+        c.verser(montant, source);
+    }
 
    
 
