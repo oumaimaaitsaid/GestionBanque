@@ -49,6 +49,9 @@ public class CompteService {
         return getCompte(code).consulterSolde();
     }
 
-  
+    public List<Operation> consulterOperations(String code) throws CompteException {
+        return getCompte(code).consulterListeOperations();
+    }
+   
   
 }
