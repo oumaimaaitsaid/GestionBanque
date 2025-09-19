@@ -15,5 +15,21 @@ public class CompteService {
 
   
 
+    public String createCompteCourant(double solde, double decouvert) {
+    	
+        CompteCourant c = new CompteCourant( solde, decouvert);
+        repo.save(c);
+        return c.getCode();
+    }
+
+  
+   
+
+   
+
+   
+
+  
+  
   
 }
