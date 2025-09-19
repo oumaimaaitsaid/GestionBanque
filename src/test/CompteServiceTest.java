@@ -17,12 +17,15 @@ public class CompteServiceTest extends TestBase {
   }
   
   
+  //testCreate compte_Courant
   public void testCreateCompteCourant() {
 	  
 	  String code =service.createCompteCourant(10000, 500);
 	  this.assertEquals(true, repo.findByCode(code).isPresent(), "testCreateCompteCourant");
   }
   
+  
+  //testVersement
   
   public void testVersement() {
 	  String code =service.createCompteCourant(0, 500);
@@ -36,6 +39,8 @@ public class CompteServiceTest extends TestBase {
 		  
 	  }
   }
+  
+  //testRetrait
   public void testRetraitAvecException() {
       String code = service.createCompteCourant(100, 0);
       this.assertThrows(
@@ -51,7 +56,7 @@ public class CompteServiceTest extends TestBase {
   		);
   }
   
-
+//testVirement
   public void testVirement() {
 	  String from = service.createCompteCourant(500, 0);
 	  String to = service.createCompteCourant(100, 0);
@@ -67,7 +72,7 @@ catch(CompteException e){
 }
   }
   
-  
+  //main
   public static void main(String[] args) {
 	  CompteServiceTest test =new CompteServiceTest();
       test.testCreateCompteCourant();
